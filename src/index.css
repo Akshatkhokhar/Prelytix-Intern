@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #000;
+  color: #fff;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+p.ak-intern-name {
+  font-size: 1.5em;
+  color: #888;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.ak-skill-list {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ak-skill-badge {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  transition: transform 0.2s;
+}
+
+.ak-skill-badge:hover {
+  transform: translateY(-5px);
+  border-color: #555;
+}
+
+.ak-skill-name {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.ak-skill-level {
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+.ak-stamina-section {
+  margin: 2rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.ak-stamina-container {
+  width: 300px;
+  height: 10px;
+  background: #333;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.ak-stamina-bar {
+  height: 100%;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.ak-stamina-text {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.ak-write-code-btn {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.ak-write-code-btn:hover:not(:disabled) {
+  background: #ccc;
+  transform: scale(1.05);
+}
+
+.ak-write-code-btn:disabled {
+  background: #333;
+  color: #666;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
