@@ -1,0 +1,110 @@
+:root {
+  --bg: #000000;
+  --text: #ffffff;
+  --text-muted: #cccccc;
+  --border: #444444;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Times New Roman', Times, serif; /* Traditional resume feel */
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
+
+.resume-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+}
+
+.contact-info {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.links a {
+  color: var(--text);
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+section {
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  border-bottom: 1px solid var(--text);
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.2rem;
+  font-weight: normal;
+}
+
+.section-content {
+  padding-left: 0.5rem;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-weight: bold;
+}
+
+.item-subheader {
+  display: flex;
+  justify-content: space-between;
+  font-style: italic;
+  margin-bottom: 0.3rem;
+}
+
+ul {
+  margin: 0.3rem 0 0.8rem 1.2rem;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+.skills-list p {
+  margin: 0.2rem 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+  .resume-container {
+    margin: 0;
+    padding: 1rem;
+  }
+}
